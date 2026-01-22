@@ -103,6 +103,5 @@ test "getModTime returns valid timestamp" := do
   -- Cleanup
   let _ ← deleteFile path
 
-#generate_tests
 
 end Tests.IO

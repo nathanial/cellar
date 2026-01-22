@@ -24,7 +24,6 @@ test "custom config values" := do
   config.cacheDir ≡ "/tmp/test"
   config.maxSizeBytes ≡ 1000
 
-#generate_tests
 
 end Tests.Config
 
@@ -75,6 +74,5 @@ test "contains returns true after addEntry" := do
   let index' := addEntry index entry
   index'.contains "test-key" ≡ true
 
-#generate_tests
 
 end Tests.CacheIndex

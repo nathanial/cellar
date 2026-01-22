@@ -143,6 +143,5 @@ test "integration: add, touch, evict cycle" := do
   | some e => e.key ≡ "b"  -- "b" should be evicted, not "a"
   | none => throw (IO.userError "no eviction")
 
-#generate_tests
 
 end Tests.LRU
